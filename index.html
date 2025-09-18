@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Website</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/1ebe189b52.js" crossorigin="anonymous"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <ul class="navItems" id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text">
+        <p>Code. Create. Iterate.</p>
+        <h1 class="blurred-bg">Hi, I'm <span>Brian</span>
+          <br> <span class="subtitle">Aspiring Software Engineer | Basketball Enthusiast | Gamer</span>
+        </h1>
+      </div>
+    </div>
+  </div>
+
+  <!--About-->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/profile.jpg">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>With over 4 years of experience
+            working with the youth of Boston, I've helped further academic journies,
+            develop interests in various sports, and provide mentorship to
+            achieve goals. I hope to continue making a positive social impact by
+            leveraging technology in software development and other tech-related roles.
+          </p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('experience')">Experiences</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+            <p class="tab-links" onclick="opentab('interests')">Interests</p>
+          </div>
+          <div class="tab-contents active-tab" id="experience">
+            <ul>
+              <li><span>June – Aug. 2020 - 2023</span><br>Junior Counselor
+                at Phillips Brooks House Association Inc. - Chinatown Adventure</li>
+              <li><span>Oct 2022 - May 2023</span><br>Tutor at
+                Phillips Brooks House Association Inc. - Chinatown Afterschool Program</li>
+              <li><span>July 2021 - August 2021</span><br>Gym Assistant
+                at Foundation for Boston Centers for Youth & Families</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>September 2023 – Present</span><br>Northeastern University</li>
+              <li><span>2019 - 2023</span><br>John D. O'Bryant School of Mathematics and Science</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="interests">
+            <ul>
+              <li><span>Basketball</span><br>Favorite Team: Boston Celtics
+                <br>Favorite Player: Jayson Tatum
+              </li>
+              <li><span>Chess</span><br>Favorite Openings: London System | French Defense
+                <br>Highest Elo: 1602 in Bullet
+              </li>
+              <li><span>Music</span><br>Current Favorite Song: Better Now
+                <br> Favorite Artist: Post Malone
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Projects-->
+  <div id="projects">
+    <div class="container">
+      <h1 class="sub-title2">My Projects</h1>
+      <div class="projects-list">
+        <div>
+          <i class="fa-solid fa-chart-simple"></i>
+          <h2>Sorting Visualizer</h2>
+          <p>A web application that enables users to visualize real-time animations of various algorithms in action.
+            Currently, it features an animation of the Bubble Sort algorithm, with plans for more algorithms to be
+            added.
+          </p>
+          <a href="https://github.com/wong-bria/sorting-visualizer"><b>Learn More</b></a>
+        </div>
+        <div>
+          <i class="fa-solid fa-users"></i>
+          <h2>Three Trios</h2>
+          <p>A GUI-based card game application offering users the ability to play against human or AI opponents.
+            The app features both simple and advanced game modes, providing an engaging experience for players of
+            all skill levels.
+          </p>
+          <a href="https://github.com/wong-bria/ThreeTrios"><b>Learn More</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-puzzle-piece"></i>
+          <h2>Solo Red</h2>
+          <p>A text-based card game application designed for single-player enjoyment.
+            Players can engage in a challenging game of Solo Red, testing their strategic skills and card-playing
+            abilities.
+          </p>
+          <a href="https://github.com/wong-bria/SoloRed"><b>Learn More</b></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!------------Skills------------>
+  <div id="skills">
+    <div class="container">
+      <h1 class="sub-title3">My Skills</h1>
+      <div class="skills-list">
+        <i class="fa-brands fa-python"></i>
+        <i class="fa-brands fa-java"></i>
+        <i class="fa-brands fa-git"></i>
+        <i class="fa-brands fa-github"></i>
+        <i class="fa-brands fa-docker"></i>
+      </div>
+    </div>
+  </div>
+
+  <!------------contact------------>
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p><i class="fa-solid fa-paper-plane"></i> Email: wong.bria [at] northeastern [dot] edu
+            <br>*** Replace the [at] with @ and [dot] with .
+          <div class="social-icons">
+            <a href="https://www.linkedin.com/in/brianwong27/"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="contact-right">
+          <p>Have a good day! <i class="fa-solid fa-face-laugh-beam"></i></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname) {
+      for (tablink of tablinks) {
+        tablink.classList.remove("active-link");
+      }
+      for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+
+  </script>
+
+  <script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu() {
+      sidemenu.style.left = "0";
+    }
+
+    function closemenu() {
+      sidemenu.style.left = "-200px";
+    }
+  </script>
+
+</body>
+
+</html>
